@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>launcher</title>
+    <link rel="stylesheet" href="launcher.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script src="/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/quicksilver.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery-hotkeys.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery-scrollto.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery-template.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/application.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="launcher">
+      <div id="header">
+        <div id="title-bar">
+          <h4>Jump To Documentation</h4>
+        </div>
+        <form action="/lookup">
+          <div id="search">
+            <input id="search-box" type="search" autosave="com.merbivore.launcher" results="5" placehold="type a method, class, or filename" />
+            <div id="filters">
+              <label for="methods" class="active"><input type="checkbox" id="methods" name="methods" /> Methods</label>
+              <label for="classes"><input type="checkbox" id="classes" name="classes" /> Classes</label>
+              <label for="files"><input type="checkbox" id="files" name="files" /> Files</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="body">
+        <div id="list">
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="left">
+          <div id="right"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
